@@ -1,0 +1,34 @@
+<div class="ui-g ui-md-12">
+  <div class="ui-g-12 ui-md-6">
+    <div class="ui-g-4">
+      Name
+    </div>
+    <div class="ui-g-8">
+      <input pInputText type="text" [(ngModel)]="product.Name"/>
+    </div>
+  </div>
+
+  <div class="ui-g-12 ui-md-6">
+    <div class="ui-g-4">
+      Description
+    </div>
+    <div class="ui-g-8">
+      <input pInputText type="text" [(ngModel)]="product.Description"/>
+    </div>
+  </div>
+
+  <div class="ui-g-12 ui-md-6">
+    <div class="ui-g-4">
+      Price
+    </div>
+    <div class="ui-g-8">
+      <input pInputText type="number" [(ngModel)]="product.Price"/>
+    </div>
+  </div>
+
+  <app-category-tree [canModify]="false" [canSelect]="true"></app-category-tree>
+
+  <div class="ui-g-12 ui-md-12">
+      <button pButton type="button" label="Save" (click)="saveProduct()"></button>
+  </div>
+</div>

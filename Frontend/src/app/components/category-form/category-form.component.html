@@ -1,0 +1,23 @@
+<div class="ui-g ui-md-12">
+  <div class="ui-g-12 ui-md-6">
+    <div class="ui-g-4">
+      Name
+    </div>
+    <div class="ui-g-8">
+      <input pInputText type="text" [(ngModel)]="category.Name"/>
+    </div>
+  </div>
+
+  <div class="ui-g-12 ui-md-6">
+    <div class="ui-g-4">
+      Description
+    </div>
+    <div class="ui-g-8">
+      <input pInputText type="text" [(ngModel)]="category.Description"/>
+    </div>
+  </div>
+
+  <div class="ui-g-12 ui-md-12">
+      <button pButton type="button" label="Save" (click)="saveCategory()"></button>
+  </div>
+</div>

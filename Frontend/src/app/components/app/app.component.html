@@ -1,0 +1,20 @@
+<p-growl id="growl" [(value)]="msgs"></p-growl>
+<div class="ui-g">
+  <div class="ui-g-12 ui-md-12 float-right">
+    <div *ngIf="securityService.userLogged">
+      <button pButton type="button" class="margin" label="Categories tree" (click)="onCategoryTreeButtonClick()"></button>
+      <button pButton type="button" class="margin" label="Products list" (click)="onProductListButtonClick()"></button>
+      <button pButton type="button" class="margin" label="Logout" (click)="onLogoutClick()"></button>
+    </div>
+
+    <div *ngIf="!securityService.userLogged">
+      <button pButton type="button" class="margin" label="Login" (click)="onLoginClick()"></button>
+      <button pButton type="button" class="margin" label="Register" (click)="onRegisterClick()"></button>
+    </div>
+  </div>
+
+  <div class="ui-g-12 ui-md-12">
+    <router-outlet></router-outlet>
+  </div>
+
+</div>

@@ -1,0 +1,5 @@
+<p-tree [value]="categories" [draggableNodes]="canModify" [droppableNodes]="canModify" [selectionMode]="selectionMode" [(selection)]="selectedCategory"></p-tree>
+<div *ngIf="canModify">
+<button pButton type="button" label="Save changes" (click)="onSaveChanges()"></button><br/><br/>
+<button pButton type="button" label="Add new category" (click)="onNewCategoryButtonClick()"></button>
+</div>

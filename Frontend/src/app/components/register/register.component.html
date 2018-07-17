@@ -1,0 +1,32 @@
+<div class="ui-g ui-md-12">
+  <div class="ui-g-12 ui-md-6">
+    <div class="ui-g-4">
+      Email
+    </div>
+    <div class="ui-g-8">
+      <input pInputText type="text" [(ngModel)]="email"/>
+    </div>
+  </div>
+
+  <div class="ui-g-12 ui-md-6">
+    <div class="ui-g-4">
+      Password
+    </div>
+    <div class="ui-g-8">
+      <input type="password" pPassword [(ngModel)]="password"/>
+    </div>
+  </div>
+
+  <div class="ui-g-12 ui-md-6">
+    <div class="ui-g-4">
+      Re-type password
+    </div>
+    <div class="ui-g-8">
+      <input type="password" pPassword [(ngModel)]="retypedPassword"/>
+    </div>
+  </div>
+
+  <div class="ui-g-12 ui-md-12">
+      <button pButton type="button" label="Register" (click)="onRegister()"></button>
+  </div>
+</div>
